@@ -22,6 +22,7 @@ class BinanceProvider(BaseCryptoProvider):
                     return lst_pairs
         except Exception as e:
             print(f'Произошла ошибка при запросе к Binance: {e}')
+            return []
 
 
 
